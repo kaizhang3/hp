@@ -1,0 +1,97 @@
+\usepackage{graphicx}       
+\usepackage[bottom]{footmisc}
+\usepackage{amsmath,amssymb,stmaryrd,array} 
+\usepackage{epsfig,color,soul,rotating,overpic}
+\usepackage{multicol}
+\usepackage{wrapfig}
+\usepackage{colortbl,xcolor}
+
+% The following two lines invoke the use of "Palatino typefaces" allowed by NSF (use 10-pt or larger)
+%\usepackage{mathpazo} 
+%\usepackage{euler}
+
+\usepackage{helvet}
+%\renewcommand{\familydefault}{\sfdefault}
+
+\usepackage[font=sf,labelfont={sf,bf},margin=2mm]{caption}
+\renewcommand{\captionfont}{\footnotesize\sffamily}
+
+\usepackage[margin=1in, paperwidth=8.5in, paperheight=11in]{geometry}
+
+
+
+\usepackage{natbib}
+\bibliographystyle{unsrt}
+%\bibliographystyle{jfm}
+%\bibliographystyle{phjcp}
+%\bibliographystyle{nature}
+\renewcommand\refname{References}
+
+\def\ve{\varepsilon}
+
+% Page number starting from 3 since the first two pages are automatically generated.
+%\setcounter{page}{1}
+
+% to compress itemize
+%\usepackage{mdwlist}
+%\let\stditemize\itemize
+%\let\endstditemize\enditemize
+%\let\itemize\undefined
+%\makecompactlist{itemize}{stditemize}
+
+\usepackage{enumitem}
+
+% For invoking 1.5 and 2-spacing format
+%\usepackage{setspace}
+%\onehalfspacing
+%\doublespacing
+
+%\usepackage{bibspacing}
+%\setlength{\bibspacing}{\baselineskip}
+
+%\renewcommand{\figurename}{Fig.}
+%\newcommand{\captionfonts}{\scriptsize}
+%\usepackage[font=sf]{caption}
+
+\long\def\symbolfootnote[#1]#2{\begingroup%
+\def\thefootnote{\fnsymbol{footnote}}\footnote[#1]{#2}\endgroup}
+
+\definecolor{Green}{cmyk}{0.75002 0 1 0}
+\definecolor{Yellow}{cmyk}{0.04 0.3 1 0.02}
+\definecolor{Orange}{cmyk}{0 0.6 1 0}
+\definecolor{Blue}{rgb}{ 0    0.3470    0.7410}
+\definecolor{Red}{rgb}{0.725,0.149,0.2}
+
+%\usepackage{titlesec}
+\usepackage[compact]{titlesec}
+\titleformat{\section}{\large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\bfseries}{\thesubsection}{1em}{}
+
+\usepackage{sectsty}
+    \chapterfont{\color{Blue}\sffamily\huge}
+    \sectionfont{\color{Blue}\sffamily\large}
+    \subsectionfont{\color{Blue}\sffamily\normalsize}
+    \subsubsectionfont{\color{Blue}\sffamily\normalsize}
+
+\newcommand\bluenote[1]{\mbox{}\marginpar{\footnotesize\raggedright\hspace{0pt}\color{blue}\emph{#1}}}
+
+\newcommand{\fgray}{\cellcolor[gray]{0.3}}
+\newcommand{\flgray}{\cellcolor[gray]{0.7}}
+
+\newcommand{\fig}{Fig.~}
+
+
+%\titleformat{\section}{\large\bfseries}{\thesection}{1em}{}
+
+\let \oldsection \section
+\renewcommand{\section}{\vspace{-5pt plus -30pt}\oldsection}
+\let \oldsubsection \subsection
+\renewcommand{\subsection}{\vspace{-5pt plus -30pt}\oldsubsection}
+
+      
+      
+%\usepackage{xcolor}
+%\usepackage{sectsty}
+%\chapterfont{\color{blue}}  % sets colour of chapters
+%\sectionfont{\color{Blue}}
+%\subsectionfont{\color{Blue}}
